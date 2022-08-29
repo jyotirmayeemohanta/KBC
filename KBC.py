@@ -1,35 +1,9 @@
-
-question_list = ["1.How many continents are there?", "2.What is the capital of India?",	"3.NG mei kaun se course padhaya jaata hai?"]
-options_list = [["Four", "Nine", "Seven", "Eight"],["Chandigarh", "Bhopal", "Chennai", "Delhi"],["Software Engineering", "Counseling", "Tourism", "Agriculture"]]
-solution_list = [3, 4, 1]
-lifeline = 0
-for i in range(len(question_list)):
-	print(question_list[i]),len(question_list[i])
-	print(1,options_list[i][0])
-	print(2,options_list[i][1])
-	print(3,options_list[i][2])
-	print(4,options_list[i][3])
-	user = int(input("Enter the correct option  "))
-	if user == solution_list[i]:
-		print("congrats! Aapka answer sahi hai")
-		print()
-	elif user == 5050:
-		if lifeline == 0:
-			lifeline+=1
-			a = solution_list[i]-1
-			print(question_list[i])
-			print(1,options_list[i][a])
-			print(2,options_list[i][i])
-			user_input = int(input("Enter the correct option  "))
-			if user_input == 1:
-				print("Congratulation Aapka answer sahi hai")
-				print()
-
-		else:
-			print("Aap lifelife use kr chuke hai")
-			print()
-	else:
-		print("sadly! Aapka jawab galat hai")
+T = int(input())
+for tc in range(T): 
+	(a, b) = map( int,input().split(' '))
+	
+	c = a + b
+	print(c)
 
 
 # que_list=["Who Invented computer","Who invented Internet","When was python developed","what is the fullform of www."]
@@ -59,3 +33,8 @@ for i in range(len(question_list)):
 #             break 
 #         index+=1
 # que()
+
+
+<script>
+    // JavaScript Code
+</script>
